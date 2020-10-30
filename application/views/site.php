@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/2.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="<?php echo base_url(); ?>assets/img/team/member2.jpg" alt="" />
                             <h4>Hugo Carvajal </h4>
                             <p class="text-muted">Ingeniero Civil en Computación e Informática</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
