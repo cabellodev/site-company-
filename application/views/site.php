@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
+        <meta name="description" content="SH digitales - El poder de innovar" />
         <meta name="author" content="" />
         <title>SH digitales</title>
         <link rel="icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/img/favicon.ico" />
