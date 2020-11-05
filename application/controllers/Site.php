@@ -5,14 +5,13 @@ class Site extends CI_Controller {
 
 	
 
-	public function index()
+    public function home()
 	{
 		$this->load->view('sh_digitales/header');
 		$this->load->view('sh_digitales/site');
 		$this->load->view('sh_digitales/footer');
 
 	}
-
 
 	
 
