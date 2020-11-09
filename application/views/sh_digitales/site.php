@@ -29,7 +29,8 @@
        
         
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
+       
+        <section class="page-section" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">nuestro equipo</h2>
@@ -63,17 +64,20 @@
                 </div>
             </div>
         </section>
+        <div>
      
         <!-- Contact-->
+        <style> section#contact{  background: linear-gradient(to bottom right, #003366 25%, #009999 100%);}</style>
+        
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contactanos</h2>
-                    <h3 class="section-subheading text-muted">Tambien por nuestras redes sociales</h3>
+                    <h2 class="section-heading text-uppercase">Contáctanos</h2>
+                    <h3 class="section-subheading text-white">Tambien por nuestras redes sociales</h3>
                 </div>
                 <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
+                    <div class="row align-items-strench mb-5">
+                        <div class="col-md-6 ">
                             <div class="form-group">
                                 <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
                                 <p class="help-block text-danger"></p>
@@ -102,33 +106,4 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-right">
-                        <a class="mr-3" href="#!">Privacy Policy</a>
-                        <a href="#!">Terms of Use</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-     
-        
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="<?php echo base_url(); ?>assets/mail/jqBootstrapValidation.js"></script>
-        <script src="<?php echo base_url(); ?>assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="<?php echo base_url(); ?>assets/js/scripts.js"></script>
-    </body>
-</html>
+       
