@@ -12,7 +12,13 @@ class Site extends CI_Controller {
 		$this->load->view('sh_digitales/footer');
 
 	}
+	public function login()
+	{
+		
+		$this->load->view('sh_digitales/login');
+	
 
+	}
 	
 
 

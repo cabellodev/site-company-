@@ -16,6 +16,51 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="<?php echo base_url(); ?>/assets/css/styles.css" rel="stylesheet" />
     </head>
+
+    <style>
+
+     .conteiner-login {
+        margin-top: 4em;
+        margin-left: 20em;
+        margin-right: 20em;
+        background: white;
+        border-radius: 25px;
+        border: 2px solid blue;
+        background-size: cover;
+     }
+
+     .conteiner-login .form-group .form-control {
+        border: 1px solid blue;
+    }
+  </style>
+
+<style type="text/css">
+  .chargePage {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .8) url('<?php echo base_url(); ?>assets/img/loading.svg') 50% 50% no-repeat
+  }
+
+  body.loading .chargePage {
+    overflow: hidden;
+    display: block
+  }
+
+  .box {
+    margin-top: 50px;
+    padding: 15px
+  }
+</style>
+
+<script>
+  const host_url = "<?php echo base_url(); ?>";
+</script>
+
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-info fixed-top" id="mainNav">
@@ -28,9 +73,9 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Quienes somos</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Equipo</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link " href="<?php echo base_url();?>login">Iniciar Sesión</a></li>
                     </ul>
                 </div>
             </div>

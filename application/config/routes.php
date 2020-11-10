@@ -54,4 +54,4 @@ $route['default_controller'] = 'Site';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['home']['GET']= 'site/home';
-
+$route['login']['GET']= 'site/login';
