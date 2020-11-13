@@ -3,6 +3,8 @@ $(() => {
 		minimumLength: 8,
 		validateOn: "change"
 	});
+	
+	
 });
 
 $(document).on({

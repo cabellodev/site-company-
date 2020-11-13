@@ -55,3 +55,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['home']['GET']= 'site/home';
 $route['login']['GET']= 'site/login';
+
+// api 
+$route['api/createUser']['POST']= 'User/createUser';
+

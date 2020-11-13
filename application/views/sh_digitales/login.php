@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="<?php echo base_url(); ?>/assets/img/logos/logo_size.jpg" />
   <link href="<?php echo base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   
   <link href="<?php echo base_url(); ?>/assets/css/login.css" rel="stylesheet" />
@@ -53,7 +53,7 @@
                         <div class="row justify-content-center px-3 mb-3"> <img style ="height:180px; width:210px" id="logo" src="<?php echo base_url(); ?>assets/img/pngegg2.png"> </div>
                         <h3 class="mb-5 text-center heading">SH-Digitales</h3>
                         <h6 class="msg-info text-center">Ingrese sus credenciales de acceso </h6>
-                        <div class="form-group"> <label class="form-control-label text-muted">Usuario</label> <input type="text" id="rut" name="rut" placeholder="Ingrese rut " class="form-control"> </div>
+                        <div class="form-group"> <label class="form-control-label text-muted">Usuario</label> <input type="text" id="rut" name="rut" placeholder="Ingrese rut " class="form-control"></div>
                         <div class="form-group"> <label class="form-control-label text-muted">Contraseña</label> <input type="password" id="passwd" name="passwd" placeholder="Ingrese contraseña" class="form-control"> </div>
                         <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color">Acceder</button> </div>
                        
@@ -61,16 +61,88 @@
                 </div>
            
                 <div class="bottom text-center mb-5">
-                    <p href="#" class="sm-text mx-auto mb-3">¿Quieres ser parte del equipo?<button class="btn btn-white ml-2">Registrarse</button></p>
+                   <button class="btn btn-white ml-2" type="button" data-toggle="modal" data-target="#agregarUser">Suscribir</button>
                 </div>
             </div>
             
-        
-    
 </div>
+
+<div class="modal fade bd-example-modal-lg" id="agregarUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: linear-gradient(to bottom right, #003366 25%, #009999 100%);">
+        <h5 class="modal-title text-white" id="titulo">Suscripción</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm">
+            <p id="UserModalInfo"></p>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row mb-2">
+            <div class="col-md-12 col-lg-6 control-label">
+              <label for="actividad">Rut</label>
+              <input type="text" class="form-control" id="registerRut" name="rut">
+              <div class="invalid-feedback rut" style="display: none;  color:red">
+                Ingrese un Rut porfavor.
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 control-label">
+              <label for="actividad">Nombre completo</label>
+              <input type="text" class="form-control" name="name" id="name">
+              <div class="invalid-feedback name" style="display: none;  color:red">
+                Ingrese su Nombre completo porfavor.
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-12 col-lg-6 control-label">
+              <label for="actividad">Email</label>
+              <input type="text" class="form-control" name="email" id="email">
+              <div class="invalid-feedback email" style="display: none;  color:red">
+                Ingrese un Email porfavor.
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 control-label">
+              <label for="actividad">Rango</label>
+              <select class="custom-select d-block w-100" id="rango" required="">
+                <option value="0">Opciones...</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Invitado">Invitado</option>
+                
+              </select>
+              <div class="invalid-feedback rango" style="display: none;  color:red">
+                Seleccione un rango porfavor.
+              </div>
+            </div>
+          </div>
+          <div class="row" id="passdiv">
+            <div class="col-md-12 col-lg-6 control-label">
+              <label for="actividad">Contraseña</label>
+              <input type="password" class="form-control" name="passwd" id="registerPass">
+              <div class="invalid-feedback passwd" style="display: none;  color:red">
+                Ingrese una Contraseña porfavor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" id="addUser" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+          
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+
         <!-- Third party plugin JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Contact form JS-->
@@ -79,11 +151,13 @@
 
         <!-- Core theme JS-->
 <script src="<?php echo base_url(); ?>assets/js/scripts.js"></script>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- Custom scripts for all pages-->
 <script src="<?php echo base_url(); ?>assets/vendor/jquery.rut.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/utils_js/sb-admin-2.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/login.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/registerUser.js"></script>
 </body>
 
 </html>
+
