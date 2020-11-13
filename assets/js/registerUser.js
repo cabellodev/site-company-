@@ -1,8 +1,9 @@
 $(() => {
 	$("#registerRut").rut({
-		minimumLength: 8,
-		validateOn: "change",
-	});
+		minimumLength: 8, // limit to char
+		validateOn: "change", //change to formate
+		
+	}); 
 });
 
 
