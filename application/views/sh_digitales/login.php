@@ -55,7 +55,7 @@
                         <h6 class="msg-info text-center">Ingrese sus credenciales de acceso </h6>
                         <div class="form-group"> <label class="form-control-label text-muted">Usuario</label> <input type="text" id="rut" name="rut" placeholder="Ingrese rut " class="form-control"></div>
                         <div class="form-group"> <label class="form-control-label text-muted">Contraseña</label> <input type="password" id="passwd" name="passwd" placeholder="Ingrese contraseña" class="form-control"> </div>
-                        <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color">Acceder</button> </div>
+                        <div class="row justify-content-center my-3 px-3"> <button type="submit" id="login" class="btn-block btn-color">Acceder</button> </div>
                        
                     </div>
                 </div>
