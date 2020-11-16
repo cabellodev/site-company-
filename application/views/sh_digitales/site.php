@@ -75,7 +75,7 @@
                     <h2 class="section-heading text-uppercase">Contáctanos</h2>
                     <h3 class="section-subheading text-white">Tambien por nuestras redes sociales</h3>
                 </div>
-                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <form id="contactForm" name="sentMessage" novalidate="novalidate"  >
                     <div class="row align-items-strench mb-5">
                         <div class="col-md-6 ">
                             <div class="form-group">
@@ -106,7 +106,6 @@
             </div>
         </section>
         <!-- Footer-->
-       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 
@@ -122,5 +121,5 @@
   <!-- Custom scripts for all pages-->
 <script src="<?php echo base_url(); ?>assets/vendor/jquery.rut.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/utils_js/sb-admin-2.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/registerPeticion.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/registerUser.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/login.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/peticion.js"></script>
