@@ -45,6 +45,7 @@
 </script>
 
 <body>
+<div class="chargePage"></div>
 <div class="container px-4 py-5 mx-auto">
     
             <div class="card card1 mx-auto">
@@ -61,83 +62,13 @@
                 </div>
            
                 <div class="bottom text-center mb-5">
-                   <button class="btn btn-white ml-2" type="button" data-toggle="modal" data-target="#agregarUser">Suscribir</button>
+                  <a href="<?php echo base_url();?>/home">Volver</a> 
                 </div>
             </div>
             
 </div>
 
-<div class="modal fade bd-example-modal-lg" id="agregarUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="background: linear-gradient(to bottom right, #003366 25%, #009999 100%);">
-        <h5 class="modal-title text-white" id="titulo">Suscripción</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-sm">
-            <p id="UserModalInfo"></p>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="row mb-2">
-            <div class="col-md-12 col-lg-6 control-label">
-              <label for="actividad">Rut</label>
-              <input type="text" class="form-control" id="registerRut" name="rut">
-              <div class="invalid-feedback rut" style="display: none;  color:red">
-                Ingrese un Rut porfavor.
-              </div>
-            </div>
-            <div class="col-md-12 col-lg-6 control-label">
-              <label for="actividad">Nombre completo</label>
-              <input type="text" class="form-control" name="name" id="name">
-              <div class="invalid-feedback name" style="display: none;  color:red">
-                Ingrese su Nombre completo porfavor.
-              </div>
-            </div>
-          </div>
-          <div class="row mb-2">
-            <div class="col-md-12 col-lg-6 control-label">
-              <label for="actividad">Email</label>
-              <input type="text" class="form-control" name="email" id="email">
-              <div class="invalid-feedback email" style="display: none;  color:red">
-                Ingrese un Email porfavor.
-              </div>
-            </div>
-            <div class="col-md-12 col-lg-6 control-label">
-              <label for="actividad">Rango</label>
-              <select class="custom-select d-block w-100" id="rango" required="">
-                <option value="0">Opciones...</option>
-                <option value="Administrador">Administrador</option>
-                <option value="Invitado">Invitado</option>
-                
-              </select>
-              <div class="invalid-feedback rango" style="display: none;  color:red">
-                Seleccione un rango porfavor.
-              </div>
-            </div>
-          </div>
-          <div class="row" id="passdiv">
-            <div class="col-md-12 col-lg-6 control-label">
-              <label for="actividad">Contraseña</label>
-              <input type="password" class="form-control" name="passwd" id="registerPass">
-              <div class="invalid-feedback passwd" style="display: none;  color:red">
-                Ingrese una Contraseña porfavor.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" id="addUser" class="btn btn-primary">Guardar</button>
-      </div>
-    </div>
-  </div>
-</div>
+
           
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

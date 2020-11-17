@@ -5,7 +5,13 @@ class Menu extends CI_Controller
 {
     public function loadMenu()
     { 
-        $this->load->view('admin/menu');
-       
+        
+        if ($this->accesscontrol->checkAuth()['correct']) {
+            $this->load->view('admin/header');
+            $this->load->view('admin/menu');
+            $this->load->view('admin/footer');
+        } else {
+            redirect(base_url() . 'login', 'refresh');
+        }
     }
 }
