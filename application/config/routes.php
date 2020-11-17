@@ -59,5 +59,5 @@ $route['menu']['GET']='Menu/loadMenu';
 // api 
 $route['api/createUser']['POST']= 'User/createUser';
 $route['api/login']['POST'] = 'Login/LoginUser';
-
+$route['api/createPeticion']['POST']= 'peticiones/createPeticion';
 
