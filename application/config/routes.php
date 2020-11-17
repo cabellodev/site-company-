@@ -56,8 +56,14 @@ $route['translate_uri_dashes'] = FALSE;
 $route['home']['GET']= 'site/home';
 $route['login']['GET']= 'site/login';
 $route['menu']['GET']='Menu/loadMenu';
+$route['adminUser']['GET']='User/adminUser';
 // api 
 $route['api/createUser']['POST']= 'User/createUser';
 $route['api/login']['POST'] = 'Login/LoginUser';
+$route['api/logout']['POST'] = 'Login/logoutUser';
+$route['api/editUser']['POST'] = 'User/editUser';
+$route['api/createUser']['POST'] = 'User/createUser';
+$route['api/getUsers']['GET'] = 'User/getUsers';
+$route['api/changeState']['POST'] = 'User/changeState';
 $route['api/createPeticion']['POST']= 'peticiones/createPeticion';
 
