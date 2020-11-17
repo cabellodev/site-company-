@@ -25,7 +25,7 @@ registerPeticion = () => {
 				text: result.msg,
 				button: "OK",
 			}).then(() => {
-                // $("#agregarUser").modal("hide");
+                $("#agregarUser").modal("hide");
             
                });
             }
