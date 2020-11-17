@@ -66,4 +66,4 @@ $route['api/createUser']['POST'] = 'User/createUser';
 $route['api/getUsers']['GET'] = 'User/getUsers';
 $route['api/changeState']['POST'] = 'User/changeState';
 $route['api/createPeticion']['POST']= 'peticiones/createPeticion';
-
+$route['api/changeState']['POST'] = 'User/changeState';
