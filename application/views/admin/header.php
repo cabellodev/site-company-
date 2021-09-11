@@ -21,6 +21,7 @@
     <!-- Custom styles for this template-->
     <link href="<?php echo base_url(); ?>assets/css_admin/sb-admin-2.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/vendor/DataTables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.css" type="text/css" rel="stylesheet"/>
     <script>
     const host_url = "<?php echo base_url(); ?>";
   </script>
@@ -101,9 +102,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Gestión de peticiones</h6>
-                        <a class="collapse-item" href="utilities-color.html">Lista de peticiones</a>
-                        <a class="collapse-item" href="utilities-border.html">Lista de respuestas</a>
-                        
+                        <a class="collapse-item" href="<?php echo base_url(); ?>adminPeticion">Lista de peticiones</a>
                     </div>
                 </div>
             </li>
@@ -156,7 +155,7 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="login.html"><i class="fas fa-fw fa-search mr-2"></i>Comprobantes</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>comprobantes"><i class="fas fa-fw fa-search mr-2"></i>Comprobantes</a>
                         <a class="collapse-item" href="login.html"><i class="fas fa-fw fa-building mr-2" ></i>Empresa</a>
                         <a class="collapse-item" href="login.html"><i class="fas fa-fw fa-database mr-2"></i>Informática</a>
                       
@@ -262,3 +261,9 @@
     <!-- Custom scripts for all pages-->
     <script src="<?php echo base_url(); ?>assets/js_admin/sb-admin-2.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js_admin/menu.js"></script>
+
+    <script src="<?php echo base_url(); ?>assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js_admin/menu.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js_admin/routes.js"></script>
+  
+    
