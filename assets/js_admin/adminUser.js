@@ -211,6 +211,7 @@ cleanInput = () => {
 	$(`.passwd`).hide();
 	$(`.rango`).hide();
 };
+
 $("#btn").on("click", () => {
 	cleanInput();
 	edit = false;
